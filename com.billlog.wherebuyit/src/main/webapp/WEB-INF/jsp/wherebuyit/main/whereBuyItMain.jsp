@@ -58,6 +58,11 @@
 </head>
 
 <body style="text-align:center; margin:0 auto; display:inline; padding-top:100px;">
-  <h1>꺄ㅑㅑㅑㅑㅑㅑㅑㅑㅑㅑㅑㅑㅑㅑㅑㅑㅑㅑㅑㅑㅑㅑㅑㅑㅑㅑㅑㅑㅑㅑㅑㅑㅑㅑㅑㅑㅑㅑㅑㅑㅑㅑㅑㅑㅑㅑㅑㅑㅑ</h1>
+ 	<c:forEach var="list" items="${list}" varStatus="status">
+		<tr>
+			<td align="left" class="listtd"><c:out value="${list.user_nm}"/>&nbsp;</td>
+			<td align="center" class="listtd"><c:out value="${list.user_id}"/>&nbsp;</td>
+		</tr>
+	</c:forEach>
 </body>
 </html>
