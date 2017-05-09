@@ -1,0 +1,98 @@
+@charset "utf-8";
+
+/*********************************************************
+Web-Font
+*********************************************************/
+@font-face{
+font-family:'Barun';
+font-style:normal;
+font-weight:400;
+src:url('/gyo6/resources/web/font/NanumBarunGothic.eot');
+src:url('/gyo6/resources/web/font/NanumBarunGothic.eot?#iefix') format('embedded-opentype'),
+	url('/gyo6/resources/web/font/NanumBarunGothic.woff') format('woff'),
+	url('/gyo6/resources/web/font/NanumBarunGothic.ttf') format('truetype');
+src:local(※), url('/gyo6/resources/web/font/NanumBarunGothic.woff') format('woff');
+}
+@font-face{
+font-family:'Barun_Bold';
+font-style:normal;
+font-weight:600;
+src:url('/gyo6/resources/web/font/NanumBarunGothicBold.eot');
+src:url('/gyo6/resources/web/font/NanumBarunGothicBold.eot?#iefix') format('embedded-opentype'),
+	url('/gyo6/resources/web/font/NanumBarunGothicBold.woff') format('woff'),
+	url('/gyo6/resources/web/font/NanumBarunGothicBold.ttf') format('truetype');
+src:local(※), url('/gyo6/resources/web/font/NanumBarunGothicBold.woff') format('woff');
+}
+
+@font-face{
+font-family:'Nanum';
+font-style:normal;
+font-weight:400;
+src:url('/gyo6/resources/web/font/NanumGothic.eot');
+src:url('/gyo6/resources/web/font/NanumGothic.eot?#iefix') format('embedded-opentype'),
+	url('/gyo6/resources/web/font/NanumGothic.woff') format('woff'),
+	url('/gyo6/resources/web/font/NanumGothic.ttf') format('truetype');
+src:local(※), url('/gyo6/resources/web/font/NanumGothic.woff') format('woff');
+}
+@font-face{
+font-family:'Nanum_Bold';
+font-style:normal;
+font-weight:600;
+src:url('/gyo6/resources/web/font/NanumGothicBold.eot');
+src:url('/gyo6/resources/web/font/NanumGothicBold.eot?#iefix') format('embedded-opentype'),
+	url('/gyo6/resources/web/font/NanumGothicBold.woff') format('woff'),
+	url('/gyo6/resources/web/font/NanumGothicBold.ttf') format('truetype');
+src:local(※), url('/gyo6/resources/web/font/NanumGothicBold.woff') format('woff');
+}
+
+
+/*********************************************************
+Normalize
+*********************************************************/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+margin:0;
+padding:0;
+border:0;
+vertical-align:baseline;
+background:transparent;
+-webkit-text-size-adjust:none;
+font:inherit;
+list-style:none;
+line-height:1.1;
+word-break:break-all;
+word-wrap:break-word;
+text-overflow:ellipsis;
+}
+header, footer, section, article, aside, nav, hgroup, details, menu, figure, figcaption, canvas{display:block;margin:0;padding:0;border:0;font-size:100%; font:inherit;}
+input,select,textarea,button{font:inherit;color:inherit;}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block;}
+em,address{font-style:normal;}
+blockquote,q{quotes:none;}
+blockquote:before,blockquote:after,q:before,q:after { content:''; content:none;}
+ins{text-decoration:none;}
+del{text-decoration:line-through;}
+mark{background:none;}
+hr{display:none;}
+abbr[title], dfn[title]{border-bottom:1px dotted #333; cursor:help;}
+img{vertical-align:top;margin:0;padding:0;border:0;font-size:0;line-height:0}
+table{border-collapse:collapse;border-spacing:0;table-layout:fixed;word-break:break-all;}
+table th, table td{vertical-align:middle;}
+input,button,select{vertical-align:middle;margin:0;}
+legend, caption, .Skip{position:absolute;left:-9999px;text-indent:9999px;width:0;height:0;overflow:hidden;font-size:0;line-height:0;white-space:nowrap}
+caption, figcaption{position:static;display:none}
+fieldset, blockquote, iframe, button{border:none;}
+a{margin:0;padding:0;text-decoration:none;vertical-align:baseline;background:transparent;text-decoration:none}
+a:hover{text-decoration:none;}
+* { -webkit-text-size-adjust:none}
+button{background:transparent;border:0 none;cursor:pointer;font-family:inherit;margin:0;padding:0;appearance:none;moz-appearance:none;overflow:visible;white-space:nowrap;outline:0}
+button * {margin:0;padding:0;}
+button::-moz-focus-inner{padding:0; border:0;}
+button,input[type="submit"], input[type="button"], input[type="reset"]{cursor:pointer;-webkit-appearance:none;}

@@ -15,7 +15,22 @@ public class UserVO {
 	private String last_login_date;
 	private String user_role;
 	private String user_img_path;
+	private String name;
+	private String id;
 	
+	
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public String getId() {
+		return id;
+	}
+	public void setId(String id) {
+		this.id = id;
+	}
 	public int getU_id() {
 		return u_id;
 	}

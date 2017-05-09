@@ -20,9 +20,9 @@
     
     <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
         <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
-        <property name="url" value="jdbc:mysql://umj64-006.cafe24.com/happy9485" />
-        <property name="username" value="happy9485"/>
-        <property name="password" value="tiajs123!"/>
+        <property name="url" value="jdbc:mysql://127.0.0.1:3306/ionic" />
+        <property name="username" value="test"/>
+        <property name="password" value="test1234"/>
     </bean>
     
     <!-- oracle

@@ -24,7 +24,8 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title><spring:message code="title.sample" /></title>
-    <link type="text/css" rel="stylesheet" href="<c:url value='/css/egovframework/sample.css'/>"/>
+    <link type="text/css" rel="stylesheet" href="<c:url value='/css/wherebuyit/reset.css'/>"/>
+    <link type="text/css" rel="stylesheet" href="<c:url value='/css/wherebuyit/common.css'/>"/>
     <script type="text/javaScript" language="javascript" defer="defer">
         <!--
         /* 글 수정 화면 function */
@@ -57,12 +58,10 @@
     </script>
 </head>
 
-<body style="text-align:center; margin:0 auto; display:inline; padding-top:100px;">
- 	<c:forEach var="list" items="${list}" varStatus="status">
-		<tr>
-			<td align="left" class="listtd"><c:out value="${list.user_nm}"/>&nbsp;</td>
-			<td align="center" class="listtd"><c:out value="${list.user_id}"/>&nbsp;</td>
-		</tr>
-	</c:forEach>
+<body>    
+	
+
+
+
 </body>
 </html>
