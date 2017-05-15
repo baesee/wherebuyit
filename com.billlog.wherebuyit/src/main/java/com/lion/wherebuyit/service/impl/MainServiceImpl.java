@@ -7,6 +7,7 @@ import javax.annotation.Resource;
 import org.springframework.stereotype.Service;
 
 import com.lion.wherebuyit.domain.BoardVO;
+import com.lion.wherebuyit.domain.FileVO;
 import com.lion.wherebuyit.domain.UserVO;
 import com.lion.wherebuyit.service.MainService;
 
@@ -23,8 +24,15 @@ public class MainServiceImpl implements MainService {
 	}
 
 	@Override
-	public List<BoardVO> selectBoardList() throws Exception {
+	public List<FileVO> selectBoardList() throws Exception {
 		// TODO Auto-generated method stub
 		return mainDAO.selectBoardList();
 	}
+
+	@Override
+	public void insertBoard(FileVO vo) throws Exception {
+		// TODO Auto-generated method stub
+		mainDAO.insertBoard(vo);		
+	}
+	
 }

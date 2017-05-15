@@ -1,0 +1,37 @@
+@CHARSET "UTF-8";
+
+
+#header { padding-top:25px; padding-bottom:16px; height:35px;  border-bottom:1px solid #ccc;}
+#header img { height:28px;}
+#header span { margin-top:20px; }
+#header .inner {background:#afa; width:970px; margin:0px auto;}
+#header .inner .logo { float:left;}
+#header .inner ul { float:right;}
+#header .inner li { display:inline-block; margin:0 10px;}
+#header .inner .signup { border:1px solid #444; border-radius:16px; padding:8px 12px;}
+#header .inner span{ margin:0 10px; border:1px solid #000; margin-top:10px; padding:10px;}
+
+
+
+
+#wrap {background:#fff; font-size:14px;}
+#container { width:1020px; margin:0px auto;}
+#contents ul{ margin:0 auto; padding-left:8px; padding-right:8px; }
+#contents li { margin-bottom:60px;}
+.card {width:600px; border:1px solid #ddd; margin:0px auto;}
+.card .profile {padding:12px 14px; height:30px; font-weight:600;}
+.card .profile img{width:28px; height:28px;}
+.card .profile p {margin-top:10px; display:inline-block;}
+.card .profile div { float:left; overflow:hidden; border-radius:50%; display:inline-block; width:28px; height:28px; margin-right:10px;}
+.card .images img { width:600px; height:600px; }
+.card .stats { padding:0px 14px 14px 14px;}
+.card .stats .writer { font-weight:bold; }
+.card .stats .reg_date { font-size:10px; letter-spacing:0.5px; color:#999;}
+.card .stats .comment input{ border:none; outline:none; width:100%; font-size:14px;}
+.card .stats div { margin:10px 0 0 0;}
+.card .stats .icons img {width:24px; height:24px;}
+.card .stats .like { font-weight:bold; }
+#footer {background:#ddd;}
+.section {text-align:center; margin:20px 0;}
+.title {font-weight:bold;}
+.card_container { }

@@ -4,6 +4,7 @@
 <sqlMap namespace="WhereBuyItMain">
 	<typeAlias  alias="UserVO" type="com.lion.wherebuyit.domain.UserVO"/>
 	<typeAlias  alias="BoardVO" type="com.lion.wherebuyit.domain.BoardVO"/>
+	<typeAlias  alias="FileVO" type="com.lion.wherebuyit.domain.FileVO"/>
 
 	<select id ="WhereBuyItMain.selectUserList" resultClass = "UserVO">
 		 <![CDATA[
@@ -14,11 +15,24 @@
 	</select>
 	
 	
-	<select id ="BoardList" resultClass = "BoardVO">
+	<select id ="BoardList1" resultClass = "BoardVO">
 		 <![CDATA[
             SELECT
                 *
             FROM board_pro
+        ]]>
+	</select>
+	
+	<insert id="WhereBuyItMain.insertBoard" >
+		INSERT INTO BOARD( CONTENT, ORIGINAL_FILE_NAME, STORED_FILE_NAME )
+			VALUES ( #content#, #fileName#, #storedFileName# )
+	</insert>
+	
+	<select id ="BoardList" resultClass = "FileVO">
+		 <![CDATA[
+            SELECT
+                STORED_FILE_NAME AS storedFileName
+            FROM board
         ]]>
 	</select>
 

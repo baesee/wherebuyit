@@ -26,42 +26,58 @@
     <title><spring:message code="title.sample" /></title>
     <link type="text/css" rel="stylesheet" href="<c:url value='/css/wherebuyit/reset.css'/>"/>
     <link type="text/css" rel="stylesheet" href="<c:url value='/css/wherebuyit/common.css'/>"/>
-    <script type="text/javaScript" language="javascript" defer="defer">
-        <!--
-        /* 글 수정 화면 function */
-        function fn_egov_select(id) {
-        	document.listForm.selectedId.value = id;
-           	document.listForm.action = "<c:url value='/updateSampleView.do'/>";
-           	document.listForm.submit();
-        }
-        
-        /* 글 등록 화면 function */
-        function fn_egov_addView() {
-           	document.listForm.action = "<c:url value='/addSample.do'/>";
-           	document.listForm.submit();
-        }
-        
-        /* 글 목록 화면 function */
-        function fn_egov_selectList() {
-        	document.listForm.action = "<c:url value='/egovSampleList.do'/>";
-           	document.listForm.submit();
-        }
-        
-        /* pagination 페이지 링크 function */
-        function fn_egov_link_page(pageNo){
-        	document.listForm.pageIndex.value = pageNo;
-        	document.listForm.action = "<c:url value='/egovSampleList.do'/>";
-           	document.listForm.submit();
-        }
-        
-        //-->
-    </script>
+    <link type="text/css" rel="stylesheet" href="<c:url value='/css/wherebuyit/style.css'/>"/>
+
 </head>
 
 <body>    
-	
+	<%@include file="header.jsp"%>
+    
+
+<h3>로컬에 있는 이미지를 바로 브라우저에 표시</h3>
+<img id="preview" src="" alt="로컬에 있는 이미지가 보여지는 영역">
 
 
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
+<form action="fileUpload.do" method="post" enctype="multipart/form-data">
+		<fieldset>
+			<table>
+				<tr>
+					<th>파일</th>
+					<td><input type="file" name="uploadfile" id="getfile" accept="image/*" required="required"></td>
+				</tr>
+				<tr>
+					<th>내용</th>
+					<td><textarea rows="20" cols="40" name="content" required="required" placeholder="내용"></textarea></td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<input type="submit" value="작성">
+						<input type="reset" value="취소">
+					</td>
+				</tr>
+			</table>
+		</fieldset>
+	</form>
+  
+  
+
+
+
+
+
+
+			<%@include file="footer.jsp"%>
+		</div>
+
+	</div>
 
 </body>
+
+ <script src="js/write.js" type="text/javascript"></script> 
 </html>
